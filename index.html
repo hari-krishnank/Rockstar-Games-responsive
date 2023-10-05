@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ===<META INFORMATION>=== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockstar Games</title>
+
+
+    <!--=== <Favicon> ===-->
+    <link rel="icon" type="image/x-icon" href="images/icon rockstar.png">
+
+
+    <!--=== <Stylesheets> ===-->
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <!--=== <navbar> ===-->
+
+    <div class="nav-bar-main">
+
+        <!--===== <Offcanvas Navigation> =====-->
+
+        <div class="side-bar-nav">
+
+            <img src="images/sidebar.png" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions" style="height: 30px;"></img>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel" style="background-color: black;">
+
+                <div class="offcanvas-body" id="canvasbody">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                        style="background-color: white;"></button>
+
+                    <!-- Navigation Links -->
+
+                    <div class="offcanvas-header">>
+                        <form class="searchbar-games" action="#" class="search-bar mt-5" id="search-form">
+                            <img src="images/newicon.svg" style="height: 30px;">
+                            <input type="text" name="search" placeholder="Search Games" id="searchbargames">
+                        </form>
+                    </div>
+                    <div class="sidebar-items">
+                        <ul class="nav flex-column" style="padding-left: 45px;">
+                            <li class="nav-item">
+                                <h2 class="hamberger mt-5">Newswire</h2><br>
+                            </li>
+                            <li class="nav-item">
+                                <h2 class="hamberger">Games</h2><br>
+                            </li>
+                            <li class="nav-item">
+                                <h2 class="hamberger">Videos</h2><br>
+                            </li>
+                            <li class="nav-item">
+                                <h2 class="hamberger">Downloads</h2><br>
+                            </li>
+                            <li class="nav-item">
+                                <h2 class="hamberger">Support <img
+                                        src="https://media-rockstargames-com.akamaized.net/mfe5/__common/img/bec977f64161454c1120.svg"
+                                        alt="Icon" class="icon-after-text"></h2><br>
+                            </li>
+                            <li class="nav-item">
+                                <h2 class="hamberger">Social Club <img
+                                        src="https://media-rockstargames-com.akamaized.net/mfe5/__common/img/bec977f64161454c1120.svg"
+                                        alt="Icon" class="icon-after-text"></h2><br>
+                            </li>
+                            <li class="nav-item">
+                                <h2 class="hamberger">Launcher <img
+                                        src="https://media-rockstargames-com.akamaized.net/mfe5/__common/img/bec977f64161454c1120.svg"
+                                        alt="Icon" class="icon-after-text"></h2><br>
+                            </li>
+                            <li class="nav-item">
+                                <h2 class="hamberger mb-5">Store <img
+                                        src="https://media-rockstargames-com.akamaized.net/mfe5/__common/img/bec977f64161454c1120.svg"
+                                        alt="Icon" class="icon-after-text"></h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--==== <End of Offcanvas Navigation> ====-->
+
+
+        <div class="rockstar-logo">
+            <img src="images/logo.svg" style="height: 40px;">
+        </div>
+
+        <!--=== Dropdown Buttons ===-->
+
+        <div class="sign-in">
+
+            <img id="nav-right-icon" src="images/sign in icon.svg" alt="Right Arrow Icon" onclick="toggleDropdown()">
+            <div id="dropdown-content" class="dropdown-content">
+                <!-- Dropdown Buttons -->
+                <button class="dropdown-button" onclick="signIn()">Sign In &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                        src="https://media-rockstargames-com.akamaized.net/mfe5/__common/img/bec977f64161454c1120.svg"
+                        alt="Icon" class="icon-after-text"></button>
+                <button class="dropdown-button" onclick="joinClub()">Join Social Club
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="https://media-rockstargames-com.akamaized.net/mfe5/__common/img/bec977f64161454c1120.svg"
+                        alt="Icon" class="icon-after-text">
+                </button>
+            </div>
+
+
+            <!--=== End Of Dropdown Buttons ===-->
+
+        </div>
+    </div>
+
+    <!--=== <End of navbar> ===-->
+
+
+    <!--==== <Section Part-1> ====-->
+
+    <div class="section-1">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="section-1-images" style="padding: 0px;">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="images/rockstar img-1.avif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="images/rock.avif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="images/rock star img-3.avif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="images/rock star img-4.avif" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-column section-1-img-text p-5">
+                        <div class="section-1-content-main-sec">
+                            <div class="section-1-first-line">
+                                <p class="first left-items">Red Dead Redemption</p>
+                            </div>
+                            <div class="section-1-second-line text-large">
+                                <h2 id="section-1-font left-items rightfont ">Now on Nintendo Switch and PS4
+                                </h2>
+                            </div>
+                            <div class="d-grid gap-2 pt-2">
+                                <button class="watch-now-btn" type="button">WATCH NOW</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--==== <End of Section Part-1> ====-->
+
+
+    <!--=== <Section Part-2> ===-->
+
+    <div class="container pt-5 mt-5">
+        <div class="text mb-4 text-white">
+            <h1>Newswire</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" style="max-width: 100%;">
+                <div class="card border-dark">
+                    <img src="images/card-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">Read Dead Online</h5>
+                        <h6>October 3,2023</h6>
+                        <p class="card-text">Halloween Hits the Frontier in Red Dead Online</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" style="max-width: 100%;">
+                <div class="card border-dark">
+                    <img src="images/card-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">GTA Online</h5>
+                        <h6>September 28,2023</h6>
+                        <p class="card-text">Capitalize on Boosted Production Speeds Across Your Businesses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" style="max-width: 100%;">
+                <div class="card border-dark">
+                    <img src="images/card-3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">GTA Online</h5>
+                        <h6>September 21,2023</h6>
+                        <p class="card-text">Celebrate Ten Years of Grand Theft Auto V in GTA Online This Week
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" style="max-width: 100%;">
+                <div class="card border-dark">
+                    <img src="images/card-4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">GTA Online</h5>
+                        <h6>September 14,2023</h6>
+                        <p class="card-text">Get the New Bravado Hotring Hellfire and More with GTA+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" style="max-width: 100%;">
+                <div class="card border-dark">
+                    <img src="images/card-5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">GTA Online</h5>
+                        <h6>September 14,2023</h6>
+                        <p class="card-text">Celebrate Ten Years of Grand Theft Auto V in GTA Online This Week</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" style="max-width: 100%;">
+                <div class="card border-dark">
+                    <img src="images/card-6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">GTA Online</h5>
+                        <h6>September 7,2023</h6>
+                        <p class="card-text">Start Seeing Double with Bonuses on Acid Lab Sell Missions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="view-btn d-flex justify-content-center align-items-center">
+        <button type="button" class="btn mt-5 view">View More</button>
+    </div>
+
+    <!--=== <End of Section Part-2> ===-->
+
+
+    <!--=== Section Part-3 ===-->
+
+    <div class="container-fluid pt-5 mt-5 ">
+        <div class="text ms-5 mb-4 text-white">
+            <h1>Featured Games</h1>
+        </div>
+
+        <div class="row ms-5 me-5">
+            <div class="col-lg-3 col-md-6 col-6 ">
+                <img src="images/card-7.jpg" class="card-img-top" alt="Feature-1">
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+                <img src="images/card-8.jpg" class="card-img-top" alt="Feature-2">
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+                <img src="images/card-9.jpg" class="card-img-top" alt="Feature-3">
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+                <img src="images/card-10.jpg" class="card-img-top" alt="Feature-4">
+
+            </div>
+        </div>
+
+        <div class="view-btn d-flex justify-content-center align-items-center">
+            <button type="button" class="btn mt-5 view">View More</button>
+        </div>
+    </div>
+
+    <!--=== <End of Section Part-3> ===-->
+
+
+    <!--=== <footer> ===-->
+
+    <footer class="footer pt-4 mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Footer Links -->
+
+                <div class="col-md-6">
+                    <ul
+                        class="footer-links d-flex flex-column flex-sm-row list-unstyled list-sm-inline justify-content-start">
+                        <li class="links mb-2 mb-sm-0 mr-sm-3">Contact</li>
+                        <li class="links mb-2 mb-sm-0 mr-sm-3">Career
+                            <img src="https://media-rockstargames-com.akamaized.net/mfe5/__common/img/bec977f64161454c1120.svg"
+                                alt="Icon" class="icon-after-text">
+                        </li>
+                        <li class="links">Subscribe <img
+                                src="https://media-rockstargames-com.akamaized.net/mfe5/__common/img/bec977f64161454c1120.svg"
+                                alt="Icon" class="icon-after-text"></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-right d-flex flex-column justify-content-start align-items-sm-end">
+                    <span class="ml-auto links mb-2 mb-md-0"> <img
+                            src="images/global logo.svg">&nbsp;&nbsp;English&nbsp;&nbsp;<img src="images/downarrow.svg">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul
+                        class="footer-links d-flex justify-content-start links-2 align-items-sm-center flex-column flex-sm-row">
+                        <li class="footer-2-line-link">Corporate</li>
+                        <li class="footer-2-line-link">Privacy</li>
+                        <li class="footer-2-line-link">Cookie Settings</li>
+                        <li class="footer-2-line-link">Cookie Policy</li>
+                        <li class="footer-2-line-link">Legal</li>
+                        <li class="footer-2-line-link">Do Not Sell My Personal Information</li>
+                    </ul>
+                </div>
+                <div
+                    class="col-md-6 text-md-right d-flex justify-content-center justify-content-sm-end align-items-center">
+                    <img class="footer-icons mx-2 my-2 my-sm-0" src="images/twitch icon.svg" alt="firsticon">
+                    <img class="footer-icons mx-2 my-2 my-sm-0" src="images/instagram icon.svg" alt="">
+                    <img class="footer-icons mx-2 my-2 my-sm-0" src="images/twitter icon.svg" alt="">
+                    <img class="footer-icons mx-2 my-2 my-sm-0" src="images/youtube icon.svg" alt="">
+                    <img class="footer-icons mx-2 my-2 my-sm-0" src="images/facebook icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- End Of Footer Links -->
+
+        <div class="col-12 mt-4 pt-4 pb-4 last-line">
+            <div class="container d-flex justify-content-between">
+                <div class="mr-auto  H">Rockstar Games</div>
+                <div class="d-flex justify-content-center">
+                    <div class="mx-2 H">New York</div>
+                    <div class="mx-2 H">London</div>
+                    <div class="mx-2 H">Paris</div>
+                    <div class="H">Bogotá</div>
+                </div>
+                <div class="ml-auto H">MCMXCVIII</div>
+            </div>
+        </div>
+    </footer>
+
+    <!--=== <End Of footer> ===-->
+
+    <!--=== <Scripts> ===-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
